@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subcontractor Flow-Down Kit | DFARS 7012</title>
+<meta name="description" content="Free subcontractor flow-down kit for defense primes. Track which subs handle CUI, generate flow-down notices, and keep your supply chain compliant.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">AI Tech Pros <span>MAPS Tools</span></div>
+    <h1>Subcontractor Flow-Down Kit</h1>
+    <p class="sub">DFARS 252.204-7012 makes you flow cybersecurity requirements down to every subcontractor that touches CUI. If your sub causes the incident, you answer for it. Track your subs, send the notices, keep the proof.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>1. Your information (the prime)</h2>
+    <div class="grid2">
+      <label class="fld">Company name <input id="pi_company" placeholder="Prime contractor, Inc."></label>
+      <label class="fld">Your name and title <input id="pi_name" placeholder="Jane Smith, Contracts Manager"></label>
+      <label class="fld">Prime contract number <input id="pi_contract" placeholder="e.g., FA8726-24-C-0001"></label>
+      <label class="fld">Contact email <input id="pi_email" placeholder="contracts@company.com"></label>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Subcontractor register</h2>
+    <div class="row">
+      <button id="addSub" class="btn">Add subcontractor</button>
+      <span class="muted small">One row per sub. Mark whether they handle CUI; the kit determines what they owe you.</span>
+    </div>
+    <div id="subs"></div>
+  </section>
+
+  <section class="card">
+    <h2>3. Flow-down notices</h2>
+    <p class="muted small">Generate a plain-English flow-down notice for any sub that handles CUI. Review with counsel before sending; the subcontract terms control.</p>
+    <div id="letters"></div>
+  </section>
+
+  <section class="card">
+    <h2>4. Export</h2>
+    <div class="row">
+      <button id="exportCsv" class="btn primary">Download sub register (CSV)</button>
+      <button id="printBtn" class="btn ghost">Print</button>
+      <button id="resetAll" class="btn ghost danger">Clear all</button>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>Free tool from <strong>Neo Harvard</strong>, CEO of <a href="https://aitechpros.ai">AI Tech Pros</a>. Part of the <a href="https://github.com/nehemiah313/maps-framework">MAPS framework</a> family. Guidance only, not legal advice. Confirm flow-down duties with your contracting officer and counsel.</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
