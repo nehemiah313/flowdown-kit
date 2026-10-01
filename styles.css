@@ -221,3 +221,8 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple
   .top .sub, .row, footer, #printBtn, #resetAll, .linklike { display: none; }
   .sub { break-inside: avoid; }
 }
+
+.fld-note{font-size:.8rem;color:#9ca3af;margin:.3rem 0 0}
+
+.legal-line{margin-top:1rem;font-size:.85rem;color:#6b7280}
+.storage-note{font-size:.8rem;color:#9ca3af;margin-top:.4rem}
